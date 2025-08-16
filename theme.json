@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "layout": { "contentSize": "760px", "wideSize": "1200px" },
+    "custom": { "radius": { "sm": "6px", "md": "12px", "lg": "24px" } },
+    "spacing": {
+      "units": ["px", "em", "rem", "%"],
+      "spacingScale": { "steps": 8 }
+    },
+    "typography": {
+      "fontFamilies": {
+        "theme": [
+          { "fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji'", "name": "Системный Sans", "slug": "system-sans" },
+          { "fontFamily": "'Georgia', 'Times New Roman', serif", "name": "Сериф", "slug": "serif" }
+        ]
+      },
+      "fontSizes": [
+        { "name": "XS", "size": "12px", "slug": "xs" },
+        { "name": "S", "size": "14px", "slug": "s" },
+        { "name": "M", "size": "16px", "slug": "m" },
+        { "name": "L", "size": "20px", "slug": "l" },
+        { "name": "XL", "size": "28px", "slug": "xl" },
+        { "name": "Заголовок", "size": "40px", "slug": "display" }
+      ]
+    },
+    "color": {
+      "palette": [
+        { "name": "Фирменный индиго", "slug": "primary", "color": "#2E2A7B" },
+        { "name": "Тёмный", "slug": "dark", "color": "#111827" },
+        { "name": "Акцент (жёлтый)", "slug": "accent", "color": "#FFD24D" },
+        { "name": "Светлый фон", "slug": "light", "color": "#F8FAFC" },
+        { "name": "Белый", "slug": "white", "color": "#FFFFFF" }
+      ]
+    }
+  },
+  "styles": {
+    "typography": { "fontFamily": "var(--wp--preset--font-family--system-sans)", "fontSize": "var(--wp--preset--font-size--m)", "lineHeight": 1.6 },
+    "color": { "background": "var(--wp--preset--color--white)", "text": "var(--wp--preset--color--dark)" },
+    "blocks": {
+      "core/button": {
+        "border": { "radius": "var(--wp--custom--radius--md)" },
+        "typography": { "fontWeight": "600" }
+      },
+      "core/image": { "border": { "radius": "var(--wp--custom--radius--md)" } },
+      "core/group": { "spacing": { "padding": { "top": "2rem", "bottom": "2rem" } } }
+    }
+  },
+  "templates": {
+    "front-page": "Главная",
+    "page": "Страница"
+  },
+  "templateParts": {
+    "header": "Шапка",
+    "footer": "Подвал"
+  }
+}
