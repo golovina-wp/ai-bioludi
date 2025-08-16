@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Превью темы</title>
+    <style>
+        :root {
+            /* Цвета из theme.json */
+            --wp--preset--color--primary: #2E2A7B;
+            --wp--preset--color--dark: #111827;
+            --wp--preset--color--accent: #FFD24D;
+            --wp--preset--color--light: #F8FAFC;
+            --wp--preset--color--white: #FFFFFF;
+
+            /* Радиусы из theme.json */
+            --wp--custom--radius--sm: 6px;
+            --wp--custom--radius--md: 12px;
+            --wp--custom--radius--lg: 24px;
+
+            /* Шрифты из theme.json */
+            --wp--preset--font-family--system-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+            --wp--preset--font-family--serif: 'Georgia', 'Times New Roman', serif;
+        }
+
+        body {
+            font-family: var(--wp--preset--font-family--system-sans);
+            font-size: 16px;  /* как "M" в theme.json */
+            line-height: 1.6;
+            background: var(--wp--preset--color--white);
+            color: var(--wp--preset--color--dark);
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1 { 
+            font-size: 40px;  /* как "Заголовок" в theme.json */
+            color: var(--wp--preset--color--primary);
+        }
+
+        .button {
+            background: var(--wp--preset--color--accent);
+            border: none;
+            padding: 12px 24px;
+            border-radius: var(--wp--custom--radius--md);
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .card {
+            background: var(--wp--preset--color--light);
+            padding: 2rem;
+            border-radius: var(--wp--custom--radius--lg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Это превью темы</h1>
+    <p>Пример текста с системным шрифтом и тёмным цветом.</p>
+    
+    <button class="button">Кнопка с акцентным цветом</button>
+    
+    <div class="card" style="margin-top: 20px;">
+        <p>Карточка с фоновым цветом "light" и закруглёнными углами.</p>
+    </div>
+</body>
+</html>
